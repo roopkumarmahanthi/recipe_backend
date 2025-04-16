@@ -48,7 +48,7 @@ app.get('/searchIngredient', async (req,res) =>{
                 },
                 {
                     headers :{
-                        Authorization : 'Bearer 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',
+                        Authorization : 'Bearer ${process.env.API_KEY}',
                         "Content-Type": "application/json",
                     },
                 }
